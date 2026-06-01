@@ -6,3 +6,5 @@ export class AuthService {
         return apiClient.post("/api/auth/login", data);
     }
 }
+
+export const authService = new AuthService();
