@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { authService } from "../api/auth.service";
+import { authStorage } from "@/shared/auth/auth-storage";
 
 export function useLogin() {
     const [loading, setloading] = useState(false);
@@ -11,7 +12,7 @@ export function useLogin() {
                 username, password,
             });
 
-            localstorage.setItem(
+            authStorage.setToken(
                 "token",
                 response.token
             );
