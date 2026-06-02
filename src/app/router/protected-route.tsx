@@ -1,8 +1,8 @@
 import { Navigate, Outlet } from "react-router-dom";
-import { getToken } from "@/shared/auth/auth-storage";
+import { authStorage } from "@/shared/auth/auth-storage";
 
 export function ProtectedRoute() {
-    const token = getToken();
+    const token = authStorage.getToken();
 
     if (!token) {
         return (
