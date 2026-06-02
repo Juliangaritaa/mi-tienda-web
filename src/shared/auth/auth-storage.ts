@@ -7,13 +7,13 @@ export const authStorage = {
     },
 
     getToken() {
-        return localStorage.token(
+        return localStorage.getItem(
             "token"
         );
     },
 
     clear() {
-        localStorage.removeItems(
+        localStorage.removeItem(
             "token"
         );
     },

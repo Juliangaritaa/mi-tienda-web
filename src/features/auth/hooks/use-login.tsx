@@ -3,7 +3,7 @@ import { authService } from "../api/auth.service";
 import { authStorage } from "@/shared/auth/auth-storage";
 
 export function useLogin() {
-    const [loading, setloading] = useState(false);
+    const [loading, setLoading] = useState(false);
 
     const login = async (username: string, password: string) => {
         try {
@@ -12,14 +12,11 @@ export function useLogin() {
                 username, password,
             });
 
-            authStorage.setToken(
-                "token",
-                response.token
-            );
+            authStorage.setToken(response.token);
 
             return response;
-        } catch (e) {
-            console.error(e.message);
+        } catch (error) {
+            console.error(error.message);
         } finally {
             setLoading(false);
         }

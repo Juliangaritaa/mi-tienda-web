@@ -8,11 +8,13 @@ import {
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { useLogin } from "../hooks/use-login";
+import { useNavigate } from "react-router-dom";
 
 export default function LoginPage() {
   const { login, loading, } = useLogin();
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate();
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
@@ -26,6 +28,7 @@ export default function LoginPage() {
       console.log(
         "Usuario autenticado"
       );
+      navigate("/", { replace: true });
     } catch (error) {
       console.error(error);
     }
