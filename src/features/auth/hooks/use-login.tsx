@@ -11,12 +11,9 @@ export function useLogin() {
             const response = await authService.login({
                 username, password,
             });
-
             authStorage.setToken(response.token);
 
             return response;
-        } catch (error) {
-            console.error(error.message);
         } finally {
             setLoading(false);
         }
