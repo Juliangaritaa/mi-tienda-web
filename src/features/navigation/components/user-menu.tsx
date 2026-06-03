@@ -10,7 +10,7 @@ import {
     AvatarFallback,
 } from "@/components/ui/avatar";
 
-export function UseMenu() {
+export function UserMenu() {
     return (
         <DropdownMenu>
             <DropdownMenuTrigger>
@@ -34,7 +34,7 @@ export function UseMenu() {
                     Cerrar sesión
                 </DropdownMenuItem>
             </DropdownMenuContent>
-            
+
         </DropdownMenu>
     );
 }

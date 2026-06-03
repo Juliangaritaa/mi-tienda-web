@@ -13,13 +13,7 @@ import { menuItems } from "../constants/menu-items";
 
 export function AppSidebar() {
     return (
-        <Sidebar>
-            <SidebarHeader>
-                <h2 className="font-bold text-lg">
-                    App Mi Tienda
-                </h2>
-            </SidebarHeader>
-
+        <Sidebar collapsible="icon" >
             <SidebarContent>
                 <SidebarMenu>
                     {menuItems.map((item) => (
