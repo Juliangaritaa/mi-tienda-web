@@ -22,7 +22,7 @@ export function AppSidebar() {
 
             <SidebarContent>
                 <SidebarMenu>
-                    {menuItems.map((item) => {
+                    {menuItems.map((item) => (
                         <SidebarMenuItem key={item.path}>
                             <SidebarMenuButton asChild>
                                 <NavLink to={item.path}>
@@ -33,7 +33,7 @@ export function AppSidebar() {
                                 </NavLink>
                             </SidebarMenuButton>
                         </SidebarMenuItem>
-                    })}
+                    ))}
                 </SidebarMenu>
             </SidebarContent>
         </Sidebar>
