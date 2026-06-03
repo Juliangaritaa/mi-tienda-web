@@ -1,4 +1,4 @@
-import { LayoutDashboard, Package, Tags, Receipt, Users } from "lucide-react";
+import { LayoutDashboard, Notebook, Package, Tags, Receipt, Users } from "lucide-react";
 //Menú lateral
 //Centralizamos la navegación
 export const menuItems = [
@@ -20,7 +20,7 @@ export const menuItems = [
     {
         title:"Tickets",
         path:"/tickets",
-        icon: Receipt,
+        icon: Notebook,
     },
     {
         title:"Usuarios",
