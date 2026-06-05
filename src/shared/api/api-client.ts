@@ -22,6 +22,25 @@ export class ApiClient {
 
         return response.json();
     }
+
+    async get<T>(endpoint: string): Promise<T> {
+        const response = await fetch(
+            `${API_URL}${endpoint}`, 
+            {
+                method: "GET",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+            }
+        );
+
+        if (!response.ok) {
+            const error = await response.json();
+            throw new Error(error.message ?? "Unexpected error");
+        }
+
+        return response.json();
+    }
 }
 
 export const apiClient = new ApiClient();
