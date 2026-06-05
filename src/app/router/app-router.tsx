@@ -4,6 +4,7 @@ import DashboardPage from "@/features/dashboard/pages/dashboard-page";
 import AuthLayout from "@/layouts/auth-layout";
 import { ProtectedRoute } from "./protected-route";
 import DashboardLayout from "@/layouts/dashboard-layout";
+import ProductPage from "@/features/products/pages/product-page";
 
 export const router = createBrowserRouter([
     {
@@ -28,6 +29,12 @@ export const router = createBrowserRouter([
                         path: "/",
                         element: (
                             <DashboardPage />
+                        ),
+                    },
+                    {
+                        path: "/products",
+                        element: (
+                            <ProductPage />
                         ),
                     },
                 ],

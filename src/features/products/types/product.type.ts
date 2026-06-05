@@ -9,3 +9,9 @@ export interface Product {
     is_active: boolean;
     created_at: string;
 }
+
+export interface ProductWithCategory extends Product {
+    categories: {
+        name: string;
+    }
+}
