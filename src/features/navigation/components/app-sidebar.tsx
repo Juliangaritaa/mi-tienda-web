@@ -17,7 +17,7 @@ export function AppSidebar() {
                 <SidebarMenu>
 
                                 <div>
-                <div className="flex items-center">
+                <div className="flex items-center gap-3">
                     <img
                         src={logo}
                         alt="AMT"
