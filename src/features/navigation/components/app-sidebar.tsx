@@ -16,14 +16,14 @@ export function AppSidebar() {
   return (
     <Sidebar collapsible="icon">
       <SidebarHeader className="h-16 flex items-center justify-start px-4">
-        <div className="flex items-center gap-3 overflow-hidden whitespace-nowrap">
+        <div className="flex items-center overflow-hidden whitespace-nowrap">
           <img
             src={logo}
             alt="AMT"
             className="h-10 w-10 min-w-10 rounded-full object-cover"
           />
           {/* El group-data-[collapsible=icon]:hidden oculta el texto automáticamente al colapsar */}
-          <span className="font-semibold text-sm group-data-[collapsible=icon]:hidden">
+          <span className="text-sm group-data-[collapsible=icon]:hidden">
             App Mi Tienda
           </span>
         </div>
