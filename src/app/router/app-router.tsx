@@ -5,6 +5,7 @@ import AuthLayout from "@/layouts/auth-layout";
 import { ProtectedRoute } from "./protected-route";
 import DashboardLayout from "@/layouts/dashboard-layout";
 import ProductPage from "@/features/products/pages/product-page";
+import CategoriesPage from "@/features/categories/pages/categories-page";
 
 export const router = createBrowserRouter([
     {
@@ -35,6 +36,13 @@ export const router = createBrowserRouter([
                         path: "/products",
                         element: (
                             <ProductPage />
+                        ),
+                    },
+                    ,
+                    {
+                        path: "/categories",
+                        element: (
+                            <CategoriesPage />
                         ),
                     },
                 ],
