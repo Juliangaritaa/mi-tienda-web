@@ -1,4 +1,4 @@
-import { LayoutDashboard, Notebook, Package, Tags, Users } from "lucide-react";
+import { LayoutDashboard, Notebook, Package, Tags, SquareCheckBig, Users } from "lucide-react";
 //Menú lateral
 //Centralizamos la navegación
 export const menuItems = [
@@ -23,7 +23,12 @@ export const menuItems = [
         icon: Notebook,
     },
     {
-        title:"Usuarios",
+        title:"Tareas",
+        path:"/task",
+        icon: SquareCheckBig,
+    },
+    {
+        title:"Team",
         path:"/users",
         icon: Users,
     },

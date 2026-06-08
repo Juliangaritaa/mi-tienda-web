@@ -8,7 +8,7 @@ export function AppHeader() {
         <header className="sticky top-0 z-10 flex h-16 w-full items-center justify-between border-b bg-background px-4 backdrop-blur-sm md:px-6">
             {/* Lado Izquierdo: Trigger del Sidebar */}
             <div className="flex items-center gap-2">
-                <SidebarTrigger />
+                <SidebarTrigger variant="outline" />
             </div>
 
             {/* Lado Derecho: Contenido responsive */}

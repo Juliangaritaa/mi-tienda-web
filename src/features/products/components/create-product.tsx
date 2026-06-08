@@ -5,6 +5,7 @@ export function CreateProduct() {
     return (
         <Button>
             <Plus />
+            Añadir
         </Button>
     );
 }

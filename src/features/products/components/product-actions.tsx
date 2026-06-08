@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
 import { MoreHorizontal } from "lucide-react";
 import type { Product } from "../types/product.type";
+import { Pencil, Trash } from "lucide-react";
 
 interface ProductsProps {
     product: Product;
@@ -21,9 +22,8 @@ export function ProductActions({ product }: ProductsProps) {
 
     return (
         <DropdownMenu>
-
             <DropdownMenuTrigger asChild >
-                <Button size="icon" variant="ghost" >
+                <Button size="icon" variant="outline" >
                     <MoreHorizontal />
                 </Button>
             </DropdownMenuTrigger>
@@ -31,15 +31,16 @@ export function ProductActions({ product }: ProductsProps) {
             <DropdownMenuContent align="end">
 
                 <DropdownMenuItem onClick={handleEdit}>
+                    <Pencil />
                     Editar
                 </DropdownMenuItem>
 
                 <DropdownMenuItem onClick={handleDelete}>
+                    <Trash />
                     Eliminar
                 </DropdownMenuItem>
 
             </DropdownMenuContent>
-
         </DropdownMenu>
     );
 }

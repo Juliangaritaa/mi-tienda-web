@@ -15,7 +15,7 @@ import { menuItems } from "../constants/menu-items";
 export function AppSidebar() {
   return (
     <Sidebar collapsible="icon">
-      <SidebarHeader className="h-16 flex items-center justify-start px-4">
+      <SidebarHeader className="flex justify-start">
         <div className="flex items-center overflow-hidden whitespace-nowrap">
           <img
             src={logo}

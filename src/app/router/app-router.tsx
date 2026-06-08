@@ -6,6 +6,7 @@ import { ProtectedRoute } from "./protected-route";
 import DashboardLayout from "@/layouts/dashboard-layout";
 import ProductPage from "@/features/products/pages/product-page";
 import CategoriesPage from "@/features/categories/pages/categories-page";
+import TaskPage from "@/features/tasks/pages/task-page";
 
 export const router = createBrowserRouter([
     {
@@ -43,6 +44,12 @@ export const router = createBrowserRouter([
                         path: "/categories",
                         element: (
                             <CategoriesPage />
+                        ),
+                    },
+                    {
+                        path: "/task",
+                        element: (
+                            <TaskPage />
                         ),
                     },
                 ],

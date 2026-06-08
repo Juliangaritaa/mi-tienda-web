@@ -6,7 +6,7 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table"
-import type { Categories } from "../types/categories.type"
+import type { Categories } from "../types/categories.types"
 import { CategoriesActions } from "../components/categories-actions";
 
 interface CategoriesTableProps {
