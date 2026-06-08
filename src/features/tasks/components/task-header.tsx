@@ -1,4 +1,4 @@
-import { CreateTask } from "./create-task";
+import CreateTask from "./create-task";
 
 export default function TaskHeader() {
     return (
